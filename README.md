@@ -2,7 +2,7 @@
 
 A full-stack expense tracker to record income and expenses, view a financial overview on a dashboard, and download your data as Excel files.
 
-🔗 **Live Demo:** [Add your Vercel link here](https://your-app.vercel.app)
+🔗 **Live Demo:** [Expense Tracker](https://expense-tracker-chaitanya-mehetre.vercel.app/)
 
 ---
 
