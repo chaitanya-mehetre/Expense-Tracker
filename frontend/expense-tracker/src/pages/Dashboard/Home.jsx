@@ -9,12 +9,12 @@ import InfoCard from "../../components/Cards/InfoCard";
 import { LuHandCoins, LuWalletMinimal } from "react-icons/lu";
 import { IoMdCard } from "react-icons/io";
 import { addThousandsSeparator } from "../../utils/helper";
-import RecentTransactions from "../../components/Dashboard/RecentTransactions";
-import FinanceOverview from "../../components/Dashboard/FinanceOverview";
-import ExpenseTransactions from "../../components/Dashboard/ExpenseTransactions";
+import RecentTransactions from "../../components/dashboard/RecentTransactions";
+import FinanceOverview from "../../components/dashboard/FinanceOverview";
+import ExpenseTransactions from "../../components/dashboard/ExpenseTransactions";
 import Last30DaysExpenses from "../../components/dashboard/Last30DaysExpenses";
-import RecentIncomeWithChart from "../../components/Dashboard/RecentIncomeWithChart";
-import RecentIncome from "../../components/Dashboard/RecentIncome";
+import RecentIncomeWithChart from "../../components/dashboard/RecentIncomeWithChart";
+import RecentIncome from "../../components/dashboard/RecentIncome";
 
 const Home = () => {
   useUserAuth();
