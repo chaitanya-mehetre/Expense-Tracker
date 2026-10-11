@@ -4,10 +4,10 @@ import DashboardLayout from "../../components/layouts/DashboardLayout";
 import toast from "react-hot-toast";
 import axiosInstance from "../../utils/axiosInstance";
 import { API_PATHS } from "../../utils/apiPaths";
-import ExpenseOverview from "../../components/expense/ExpenseOverview";
+import ExpenseOverview from "../../components/Expense/ExpenseOverview";
 import Modal from "../../components/Modal";
-import AddExpenseForm from "../../components/expense/AddExpenseForm";
-import ExpenseList from "../../components/expense/ExpenseList";
+import AddExpenseForm from "../../components/Expense/AddExpenseForm";
+import ExpenseList from "../../components/Expense/ExpenseList";
 import DeleteAlert from "../../components/DeleteAlert";
 
 const Expense = () => {
