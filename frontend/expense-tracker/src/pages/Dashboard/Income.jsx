@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useCallback } from "react";
 import DashboardLayout from "../../components/layouts/DashboardLayout";
-import IncomeOverview from "../../components/Income/IncomeOverview";
+import IncomeOverview from "../../components/income/IncomeOverview";
 import axiosInstance from "../../utils/axiosInstance";
 import { API_PATHS } from "../../utils/apiPaths";
 import { toast } from "react-hot-toast";
 import Modal from "../../components/Modal";
-import AddIncomeForm from "../../components/Income/AddIncomeForm";
-import IncomeList from "../../components/Income/IncomeList";
+import AddIncomeForm from "../../components/income/AddIncomeForm";
+import IncomeList from "../../components/income/IncomeList";
 import DeleteAlert from "../../components/DeleteAlert";
 import { useUserAuth } from "../../hooks/useUserAuth";
 
