@@ -62,7 +62,7 @@ const SignUp = () => {
         fullName,
         email,
         password,
-        profileImageUrl
+        profileImageUrl,
       });
       const { token, user } = response.data;
 
@@ -93,7 +93,7 @@ const SignUp = () => {
   return (
     <AuthLayout>
       <div className="lg:w-full h-full md:h-full mt-0 md:mt-0 flex flex-col justify-center">
-        <div className="text-4xl font-extrabold text-black">
+        <div className="text-4xl font-extrabold text-black dark:text-white">
           Create an Account
         </div>
         <p className="text-sm text-slate-400 mt-1.5 mb-6">
@@ -161,8 +161,8 @@ const SignUp = () => {
             REGISTER
           </button>
 
-          <p className="text-[13px] text-slate-800 mt-3">
-            Already have an account?{" "}
+          <p className="text-[13px] text-slate-800 dark:text-slate-300 mt-3">
+            Already have an account?
             <Link className="font-medium text-primary underline" to="/login">
               Login
             </Link>

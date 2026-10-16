@@ -21,7 +21,7 @@ const TransactionInfoCard = ({
     : "bg-red-50 text-red-600";
 
   return (
-    <div className="group relative flex items-center gap-3 sm:gap-4 mt-2 p-3 rounded-xl transition-all hover:bg-gray-50 border border-transparent hover:border-gray-100">
+    <div className="group relative flex items-center gap-3 sm:gap-4 mt-2 p-3 rounded-xl transition-all hover:bg-gray-50 border border-transparent hover:border-gray-100 dark:hover:bg-slate-800 dark:hover:border-slate-700">
       {/* Icon Container */}
       <div className="w-11 h-11 flex shrink-0 items-center justify-center text-xl text-gray-600 bg-gray-100 rounded-full overflow-hidden">
         {icon ? (
@@ -30,10 +30,9 @@ const TransactionInfoCard = ({
           <LuUtensils size={20} />
         )}
       </div>
-
       <div className="flex-1 flex items-center justify-between gap-2 min-w-0">
         <div className="min-w-0 flex-1">
-          <p className="text-sm text-gray-800 font-semibold truncate">
+          <p className="text-sm text-gray-800 dark:text-slate-100 font-semibold truncate">
             {title}
           </p>
           <p className="text-[11px] text-gray-400 mt-0.5 truncate">{date}</p>

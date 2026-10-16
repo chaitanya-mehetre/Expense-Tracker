@@ -4,8 +4,6 @@ import CustomBarChart from "../Charts/CustomBarChart";
 import { prepareIncomeBarChartData } from "../../utils/helper";
 
 const IncomeOverview = ({ transactions = [], onAddIncome }) => {
-  
-  // Calculate the chart data directly during render using useMemo
   const chartData = useMemo(() => {
     return prepareIncomeBarChartData(transactions);
   }, [transactions]);
@@ -13,11 +11,15 @@ const IncomeOverview = ({ transactions = [], onAddIncome }) => {
   const hasData = transactions && transactions.length > 0;
 
   return (
-    <div className="card p-4 md:p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+    <div className="card p-4 md:p-6">
       <div className="flex items-center justify-between">
         <div className="space-y-1">
-          <h5 className="text-lg font-bold text-gray-800 leading-tight">Income Overview</h5>
-          <p className="text-xs text-slate-400 font-medium">Track your income sources</p>
+          <h5 className="text-lg font-bold text-gray-800 dark:text-white leading-tight">
+            Income Overview
+          </h5>
+          <p className="text-xs text-slate-400 dark:text-slate-500 font-medium">
+            Track your income sources
+          </p>
         </div>
 
         <button
@@ -33,9 +35,12 @@ const IncomeOverview = ({ transactions = [], onAddIncome }) => {
         {hasData ? (
           <CustomBarChart data={chartData} xAxisKey="date" />
         ) : (
-          <div className="flex flex-col items-center justify-center py-16 text-gray-400 border border-dashed border-gray-200 rounded-xl bg-slate-50/50">
+          <div className="flex flex-col items-center justify-center py-16 text-gray-400 border border-dashed border-gray-200 rounded-xl bg-slate-50/50 dark:border-slate-700 dark:bg-slate-800/40">
             <p className="text-sm font-medium">No income data available yet</p>
-            <p className="text-xs text-slate-400 mt-1">Click the button above to add transactions and generate your chart.</p>
+            <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
+              Click the button above to add transactions and generate your
+              chart.
+            </p>
           </div>
         )}
       </div>

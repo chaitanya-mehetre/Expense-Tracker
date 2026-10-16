@@ -78,11 +78,12 @@ const Login = () => {
   return (
     <AuthLayout>
       <div className="lg:w-[70%] h-3/4 md:h-full flex flex-col justify-center">
-        <h3 className="text-4xl font-extrabold text-black">Welcome Back!</h3>
+        <h3 className="text-4xl font-extrabold text-black dark:text-white">
+          Welcome Back!
+        </h3>
         <p className="text-sm text-slate-400 mt-1.5 mb-6">
           Please enter your details to log in
         </p>
-
         <form action="" onSubmit={handleLogin}>
           <Input
             value={email}
@@ -116,7 +117,7 @@ const Login = () => {
           )}
 
           {error.general && (
-            <p className="text-red-500 text-sm pb-3 text-center bg-red-50 py-2 mb-4 rounded border border-red-200">
+            <p className="text-red-500 text-sm pb-3 text-center bg-red-50 dark:bg-red-950/40 py-2 mb-4 rounded border border-red-200 dark:border-red-900">
               {error.general}
             </p>
           )}
@@ -125,7 +126,7 @@ const Login = () => {
             LOGIN
           </button>
 
-          <p className="text-[13px] text-slate-800 mt-3">
+          <p className="text-[13px] text-slate-800 dark:text-slate-300 mt-3">
             Don't have an account?{" "}
             <Link className="font-medium text-primary underline" to="/signup">
               SignUp

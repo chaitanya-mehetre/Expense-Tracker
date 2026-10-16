@@ -49,7 +49,7 @@ const CustomPieChart = ({
                   y="46%"
                   textAnchor="middle"
                   dominantBaseline="middle"
-                  fill="#6b7280"
+                   className="fill-gray-500 dark:fill-slate-400"
                   style={{ fontSize: "12px", fontWeight: 500 }}
                 >
                   {label}
@@ -59,7 +59,7 @@ const CustomPieChart = ({
                   y="56%"
                   textAnchor="middle"
                   dominantBaseline="middle"
-                  fill="#111827"
+                  className="fill-gray-900 dark:fill-white"
                   style={{ fontSize: "20px", fontWeight: 700 }}
                 >
                   {totalAmount}
